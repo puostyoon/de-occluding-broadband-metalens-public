@@ -19,6 +19,8 @@ This project implements a **split-spectrum metasurface-based imaging pipeline** 
 
 ### Dataset Structure
 
+The prepared dataset can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1siNWBBHfKFFi4170p5rpSbTFk9WyrfSp?usp=sharing).
+
 Prepare your dataset with the following folder structure for the neural network training:
 
 ```
