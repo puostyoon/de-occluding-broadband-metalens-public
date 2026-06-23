@@ -140,4 +140,4 @@ For questions, issues, or suggestions:
 
 ---
 
-**Last Updated**: January 2026
+**Last Updated**: June 2026
