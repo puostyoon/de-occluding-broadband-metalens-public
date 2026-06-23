@@ -127,7 +127,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://mit-l
 ## Acknowledgments
 
 - [PADO library](https://github.com/shwbaek/pado) for differentiable wave optics simulation
-- This project references code and logic from [SeeThroughObstructions](https://github.com/princeton-computational-imaging/SeeThroughObstructions)
+- This project references code and logic for metalens training from [SeeThroughObstructions](https://github.com/princeton-computational-imaging/SeeThroughObstructions)
+- This project references code for image reconstruction network from [ParamISP](https://github.com/woo525/ParamISP)
 
 ---
 
