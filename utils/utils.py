@@ -347,7 +347,7 @@ def save_settings(args, param, exist_ok=False):
         json.dump(args_dict, f, indent=4, sort_keys=False)
     shutil.copy(args.param_file, args.result_path)
     shutil.copy('utils/utils.py', args.result_path)
-    shutil.copy('./train_learned_split_spectrum_metalens.py', args.result_path)
+    shutil.copy('./train_de_occluding_broadband_metalens.py', args.result_path)
     if args.pretrained_DOE is not None:
         shutil.copy(args.pretrained_DOE, os.path.join(args.result_path, 'init'))
     args.param = param

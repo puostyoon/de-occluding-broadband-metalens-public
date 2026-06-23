@@ -1,16 +1,16 @@
-# Learned Split-Spectrum Metalens for Obstruction-Free Imaging
+# De-occluding broadband metalens
 
-A computational imaging system that designs optimized metasurfaces and trains neural networks for robust imaging and restoration under obstructions (dirt, rain, dust).
+A computational imaging system that designs optimized metasurfaces and trains neural networks for robust imaging and restoration under obstructions (such as dirt, fence, dust).
 
 ## Overview
 
 This project implements a **split-spectrum metasurface-based imaging pipeline** with **two-stage optimization**:
 
 **Stage 1: Metasurface Design (Optical Part)**
-- Learns a metasurface design optimized for obstruction-free imaging
-- Uses wave optics based simulation (PADO library) 
+- Learns a metasurface design optimized for de-occluding broadband imaging
+- Uses wave optics based simulation (PADO library)
 - Applies split-spectrum optimization with RGB bandpass filters
-- **Key insight**: Metasurface is designed to create favorable optical effects that make obstructions easier to remove
+- **Insight**: Metasurface is designed to create favorable optical effects that make obstructions easier to remove
 
 **Stage 2: Neural Network Restoration (Image Processing)**
 - Trains a restoration network to further enhance optically degraded images
@@ -23,19 +23,18 @@ Prepare your dataset with the following folder structure for the neural network 
 
 ```
 dataset/
-├─ learned_split_spectrum_metalens_training_data/
-│  ├─ Meta_camera/      (degraded images from metasurface)
-│  │  ├─ img_0000.png
-│  │  ├─ img_0001.png
-│  │  └─ ...
-│  └─ GT_camera/        (clean ground truth images)
-│     ├─ img_0000.png
-│     ├─ img_0001.png
-│     └─ ...
-│
-└─ learned_split_spectrum_metalens_test_data/
-   ├─ Meta_camera/
-   └─ GT_camera/
+|-- de_occluding_broadband_metalens_training_data/
+|   |-- Meta_camera/      (degraded images from metasurface)
+|   |   |-- img_0000.png
+|   |   |-- img_0001.png
+|   |   `-- ...
+|   `-- GT_camera/        (clean ground truth images)
+|       |-- img_0000.png
+|       |-- img_0001.png
+|       `-- ...
+`-- de_occluding_broadband_metalens_test_data/
+    |-- Meta_camera/
+    `-- GT_camera/
 ```
 
 **Note**: Both `Meta_camera/` and `GT_camera/` must contain the same set of image files.
@@ -44,16 +43,15 @@ dataset/
 
 Configuration parameters are defined in `asset/config/param_*.py`.
 
-
 ---
 
 ## File Descriptions & Usage
 
 ### 1. `train_metasurface.sh`
 
-**Purpose**: Optimize a metasurface for obstruction-free imaging.
+**Purpose**: Optimize a metasurface for de-occluding broadband imaging.
 
-**Function**: Bash wrapper script that calls `train_learned_split_spectrum_metalens.py` with preset hyperparameters.
+**Function**: Bash wrapper script that calls `train_de_occluding_broadband_metalens.py` with preset hyperparameters.
 
 **Usage**:
 ```bash

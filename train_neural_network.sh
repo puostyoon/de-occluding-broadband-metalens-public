@@ -1,14 +1,14 @@
 export CUDA_VISIBLE_DEVICES=6
 NPROC_PER_NODE=1
 
-TRAINING_DATA_DIR=./dataset/learned_split_spectrum_metalens_training_data
-TEST_DATA_DIR=./dataset/learned_split_spectrum_metalens_test_data
+TRAINING_DATA_DIR=./dataset/de_occluding_broadband_metalens_training_data
+TEST_DATA_DIR=./dataset/de_occluding_broadband_metalens_test_data
 
 NETWORK_DIR=None # if exist, load pretrained network weights from this path
 BATCH_SIZE=2 # For patch training, use 14. For full image training, use 1. When this number is 1, the CROP_PATCH_SIZE must be equal to FULL_RES.
 CROP_PATCH_SIZE=256 # Should be divisible by 4.
 FULL_RES=848  # Should be divisible by 4.
-RESULT_PATH=learned_split_spectrum_neural_network_output
+RESULT_PATH=de_occluding_broadband_metalens_neural_network_output
 
 L1_LOSS_WEIGHT=1.0
 DA_LOSS_WEIGHT=0.0

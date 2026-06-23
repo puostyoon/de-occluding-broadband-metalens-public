@@ -150,7 +150,7 @@ def train(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='PSF based Obstruction-free Metasurface training',
+        description='PSF-based de-occluding broadband metalens training',
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     

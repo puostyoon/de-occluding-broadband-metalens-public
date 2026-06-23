@@ -40,7 +40,7 @@ PHASE_INIT=random #Fresnel or random
 # --far_disparity
 # --split_spectrum
 
-python train_learned_split_spectrum_metalens.py \
+python train_de_occluding_broadband_metalens.py \
 --constant_wvl_phase \
 --train_broadband \
 --use_ssim_loss \
