@@ -115,7 +115,7 @@ bash train_neural_network.sh
 If you use this project in your research, please cite:
 
 ```bibtex
-Yoon, S. et al. De-occluding broadband metalens, version 1.0.0. Zenodo https://doi.org/10.5281/zenodo.20823451 (2026).
+SeungwooYoon. (2026). puostyoon/de-occluding-broadband-metalens-public: v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20823451
 ```
 
 ---
