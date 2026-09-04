@@ -2,6 +2,10 @@
 
 A computational imaging system that designs optimized metasurfaces and trains neural networks for robust imaging and restoration under obstructions (such as dirt, fence, dust).
 
+## Project Page
+
+[Project page](https://puostyoon.github.io/de-occluding-broadband-metalens-project-page/)
+
 ## Overview
 
 This project implements a **split-spectrum metasurface-based imaging pipeline** with **two-stage optimization**:
